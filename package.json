@@ -1,6 +1,6 @@
 {
   "name": "to-do-app-full-react",
-  "version": "1.0.0",
+  "version": "1.0.16",
   "main": "/src/index.js",
   "scripts": {
     "start": "react-scripts start",
