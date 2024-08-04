@@ -23,14 +23,14 @@
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
   }
-
+  
   .content {
     max-width: 760px;
     margin: 0 auto;
   }
 
   header {
-    font-size: 1.5rem;
+    font-size: 1.3rem; 
   }
 
   header, .input-field {

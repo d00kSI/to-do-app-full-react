@@ -59,10 +59,7 @@ const TodoApp = () => {
 
     return (
         <div className="content">
-            <header>
-                <h1>Damijan's Todo List</h1>
-            </header>
-            
+           
             <div className='input-field'>
                 <TodoForm addTodo={addTodo} />                                                      {/* Form to add new todos */}
                 
