@@ -3,7 +3,6 @@ import SideNav from './SideNav';
 import TodoApp from './TodoApp';
 import WeatherApp from './WeatherApp';
 import JokeApp from './JokeApp';
-
 import './styles.css';
 
 function App() {
@@ -44,6 +43,8 @@ function App() {
       <header>
         <h1 id="appTitle">{appTitle}</h1>
       </header>
+
+      <SideNav isOpen={isNavOpen} onDisplayApp={displayApp} closeNav={closeNav} />
 
       <div id="appArea" className="appArea">
         {activeApp === 'todo-list' && <TodoApp />}
