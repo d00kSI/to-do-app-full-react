@@ -81,6 +81,7 @@ select {
 .todo-list {
     min-width: 30%;
     list-style: none;
+    margin: 3rem;
 }
 
 .todo {
@@ -91,7 +92,8 @@ select {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.5s ease; 
+    transition: all 0.5s ease;
+    height: 5.5vh; 
 }
 
 .todo li {
@@ -105,6 +107,7 @@ select {
     padding: 1rem;
     cursor: pointer;
     font-size: 1rem;
+    height: 5.5vh;
 }
 
 .complete-btn {
@@ -140,6 +143,8 @@ select {
         flex-direction: column;
         align-items: flex-start;
         padding: 1rem;
+        margin-top: -2rem;
+        margin-left: 0.5rem;
     }
 
     .input-field form,
@@ -163,5 +168,19 @@ select {
         margin-left: 0;
         min-width: auto;
         padding: 0.5rem 1rem;
+    }
+    
+    .todo-list {
+        margin: 0 1rem;
+    }
+
+    .todo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .input-field {
+        margin-top: -2rem;
     }
 }

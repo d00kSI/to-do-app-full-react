@@ -4,9 +4,10 @@ body {
 
 .card {
     width:90%;
-    max-width: 470px;
+    max-width: 500px;
     background: linear-gradient(125deg, var(--clr-light-blue), var(--clr-dark-blue));
     color: var(--clr-white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     border-radius: 1.5rem;
     padding: 2rem 2rem;
@@ -28,7 +29,7 @@ body {
     padding: 0.8rem 1.5rem;
     height: 3.5rem;
     border-radius: 1rem;
-    flex: 1;
+    flex: 1 1 auto;
     margin-right: 1rem;
     font-size: 1.2rem;
     box-shadow: 0 0 1.2rem -0.6rem;                               
@@ -41,6 +42,7 @@ body {
     border-radius: 50%;
     width: 3.5rem;
     height: 3.5rem;
+    flex: 0 0 auto;                                         /* Prevent the button from shrinking or growing */
     cursor: pointer;
     box-shadow: 0 0 1.2rem -0.6rem;  
 }
@@ -59,27 +61,28 @@ body {
 }
 
 .weather-icon {
-    width: 200px;
+    width: 50%;
+    max-width: 200px;
     margin-top: 1.5rem;
 }
 
 .weather h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 500;
     text-shadow: 0 0 1.2rem -0.6rem; 
 }
 
 .weather h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 400;
-    margin-top: -10px;
+    margin-top: -5px;
     text-shadow: 0 0 1.2rem -0.6rem; 
 }
 
 .weather h3 {
     font-size: 2rem;
     font-weight: 400;
-    margin-top: 0.25rem;
+    margin-top: 0rem;
     text-shadow: 0 0 1.2rem -0.6rem; 
 }
 
@@ -111,4 +114,68 @@ body {
 .humidity, .wind {
     font-size: 1.5rem;
     margin-top: -0.5rem;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-top: -2rem;
+        padding: 1.5rem;
+    }
+
+    .form input {
+        font-size: 1rem;
+    }
+
+    .form button {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .weather h1 {
+        font-size: 3.5rem;
+    }
+    
+    .weather h2 {
+        font-size: 2rem;
+    }
+    
+    .weather h3 {
+        font-size: 1.45rem;
+    }
+
+    .col .symbol-left, .col .symbol-right {
+        width: 1.7rem;
+    }
+    
+    .humidity, .wind {
+        font-size: 1.3rem;
+        margin-top: -0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        margin-top: -2rem;
+    }
+
+    .weather h1 {
+        font-size: 3rem;
+    }
+    
+    .weather h2 {
+        font-size: 1.5rem;
+    }
+    
+    .weather h3 {
+        font-size: 1rem;
+    }
+
+    .col .symbol-left, .col .symbol-right {
+        width: 1.5rem;
+    }
+    
+    .humidity, .wind {
+        font-size: 1rem;
+        margin-top: -0.5rem;
+    }
 }

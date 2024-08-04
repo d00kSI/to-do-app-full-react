@@ -60,8 +60,7 @@ const TodoApp = () => {
     });
 
     return (
-        <div className="content">
-           
+        <div className="content">  
             <div className='input-field'>
                 <TodoForm addTodo={addTodo} />                                                      {/* Form to add new todos */}
                 

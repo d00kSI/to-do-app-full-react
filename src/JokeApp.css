@@ -13,6 +13,7 @@
   border-radius: 0.5rem;
   padding: 2rem;
   text-align: left;
+  margin-top: -1rem;
 }
 
 .label {
@@ -60,10 +61,7 @@
 
 @media (max-width: 400px) {
   .joke-container {
-    padding: 1rem; /* Further reduce padding on very small screens */
-  }
-
-  .category {
-    font-size: 0.7rem; /* Further adjust font size for very small screens */
+    padding: 1rem;
+    margin-top: -2rem;
   }
 }

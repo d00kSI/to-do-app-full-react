@@ -1,19 +1,19 @@
 :root {
   --clr-white: #ebfffc;
   --clr-dark: #222;
-  --clr-light-blue: #C4DDFE;
-  --clr-dark-blue: #2A6FEA;
-  --clr-light-violet: #825B97;
-  --clr-dark-violet: #431C52;
+  --clr-light-blue: #c4ddfe;
+  --clr-dark-blue: #2a6fea;
+  --clr-light-violet: #825b97;
+  --clr-dark-violet: #431c52;
   --clr-light-green: #388688;
-  --clr-dark-green: #0F496E; 
-  --clr-error: #6F0119;
-}    
+  --clr-dark-green: #0f496e;
+  --clr-error: #6f0119;
+}
 
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
@@ -22,16 +22,41 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
 }
 
-body{
-  background-image: linear-gradient(0deg, #121212, #546E7A);
+body {
+  background-image: linear-gradient(0deg, #121212, #546e7a);
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   min-height: 100vh;
 }
 
 span.menu-icon {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  min-height: 15vh;
+}
+
+.app-title {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  .app-title {
+    font-size: 2rem;
+  }
+
+  span.menu-icon {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .app-title {
+    font-size: 1.7rem;
+  }
+
+  span.menu-icon {
+    font-size: 1.2rem;
+  }
 }
