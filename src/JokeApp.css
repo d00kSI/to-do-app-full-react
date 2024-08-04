@@ -1,15 +1,20 @@
 .joke-container {
-  flex: 0 0 500px;
-  width: 500px;
+  flex: 1 1 auto;
+  max-width: 500px;
+  width: 80%;
   height: fit-content;
-  background: linear-gradient(125deg, var(--clr-light-green), var(--clr-dark-green));
+  background: linear-gradient(
+    125deg,
+    var(--clr-light-green),
+    var(--clr-dark-green)
+  );
   color: var(--clr-white);
   margin: 0 auto;
   border-radius: 0.5rem;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 2rem;
   text-align: left;
 }
-  
+
 .label {
   width: 100%;
   display: flex;
@@ -18,20 +23,21 @@
   color: var(--clr-white);
   text-shadow: 0 0 1.2rem -0.6rem;
 }
-  
+
 .category {
   font-size: 0.9rem;
   font-weight: 600;
-  width: 9rem;
+  width: auto;
+  max-width: 10rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0.3rem 0;
   border-radius: 0.5rem;
   text-align: center;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .joke {
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   line-height: 1.4rem;
 }
 
@@ -50,4 +56,14 @@
   font-weight: 500;
   color: white;
   margin-left: 1rem;
+}
+
+@media (max-width: 400px) {
+  .joke-container {
+    padding: 1rem; /* Further reduce padding on very small screens */
+  }
+
+  .category {
+    font-size: 0.7rem; /* Further adjust font size for very small screens */
+  }
 }
