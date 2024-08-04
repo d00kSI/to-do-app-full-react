@@ -7,7 +7,7 @@ body {
     max-width: 470px;
     background: linear-gradient(125deg, var(--clr-light-blue), var(--clr-dark-blue));
     color: var(--clr-white);
-    margin: 100px auto 0;
+    margin: 0 auto;
     border-radius: 1.5rem;
     padding: 2rem 2rem;
     text-align: center;

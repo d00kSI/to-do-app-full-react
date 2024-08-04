@@ -96,7 +96,6 @@ export default function JokeContainer() {
   return (
     <section>
       <div className="joke-container" id="joke-container">
-        <div className="title">Automatic Joke</div>
         <div id="label" className="category" style={{ background: defineColor(category) }}>{category}</div>
         <div id="joke" className="joke">
           <p id="setup" className="setup" dangerouslySetInnerHTML={{ __html: setup }}></p>

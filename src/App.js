@@ -26,7 +26,7 @@ function App() {
     setActiveApp(app);
     switch (app) {
       case 'todo-list':
-        setAppTitle('ToDo List');
+        setAppTitle('To Do List');
         break;
       case 'weather-app':
         setAppTitle('Weather App');
@@ -35,7 +35,7 @@ function App() {
         setAppTitle('Random Joke Fetcher');
         break;
       default:
-        setAppTitle('ToDo List');
+        setAppTitle('To Do List');
     }
   };
 
