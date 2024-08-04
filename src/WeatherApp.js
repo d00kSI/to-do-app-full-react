@@ -10,7 +10,7 @@ const apiUrl = "https://api.weatherapi.com/v1/current.json?&q=";
 export default function WeatherApp() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
-  const [error, setError] = useState(null); // Initialize error as null
+  const [error, setError] = useState(null);                                           // Initialize error as null
 
   useEffect(() => {
     // Retrieve the last searched city from localStorage on component mount
@@ -52,7 +52,7 @@ export default function WeatherApp() {
       }
     } catch (error) {
       console.error("Error fetching weather data:", error);
-      setError("An error occurred while fetching weather data."); // Set error message
+      setError("An error occurred while fetching weather data.");                         // Set error message
     }
   };
 

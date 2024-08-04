@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import SideNav from './SideNav';
 import TodoApp from './TodoApp';
-import WeatherApp from './WeatherApp.js/index.js';
-import JokeApp from './JokeApp.js';
+import WeatherApp from './WeatherApp';
+import JokeApp from './JokeApp';
 import './styles.css';
 
 function App() {
