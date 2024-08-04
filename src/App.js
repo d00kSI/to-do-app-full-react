@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SideNav from './SideNav';
 import TodoApp from './TodoApp';
 import WeatherApp from './WeatherApp';
@@ -9,6 +9,18 @@ function App() {
   const [activeApp, setActiveApp] = useState('todo-list');
   const [appTitle, setAppTitle] = useState('ToDo List');
   const [isNavOpen, setIsNavOpen] = useState(false);
+
+  useEffect(() => {
+    const savedActiveApp = localStorage.getItem('activeApp');
+    if (savedActiveApp) {
+      setActiveApp(savedActiveApp);
+      displayApp(savedActiveApp);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('activeApp', activeApp);
+  }, [activeApp]);
 
   const displayApp = (app) => {
     setActiveApp(app);
@@ -25,7 +37,6 @@ function App() {
       default:
         setAppTitle('ToDo List');
     }
-    closeNav();                                                                       // Close side navigation when an app is selected
   };
 
   const openNav = () => {
