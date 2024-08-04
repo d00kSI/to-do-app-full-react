@@ -1,5 +1,6 @@
 // useState is used to remember the current state of an element
 import { useState, useEffect } from 'react';
+import './JokeApp.css';
 
 export default function JokeContainer() {
   // State variables to hold the joke data, category, and error message

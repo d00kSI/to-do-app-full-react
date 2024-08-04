@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import WeatherForm from "./WeatherForm";
 import WeatherDetails from "./WeatherDetails";
 import ErrorMessage from "./ErrorMessage";
+import './WeatherApp.css';
 
 const apiKey = "504fb05cd7cd4ac38d5213023231806";
 const apiUrl = "https://api.weatherapi.com/v1/current.json?&q=";
