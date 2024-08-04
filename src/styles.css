@@ -2,6 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  :root {
+    --clr-white: #ebfffc;
+    --clr-dark: #222;
+    --clr-light-blue: #C4DDFE;
+    --clr-dark-blue: #2A6FEA;
+    --clr-light-violet: #825B97;
+    --clr-dark-violet: #431C52;
+    --clr-light-green: #388688;
+    --clr-dark-green: #0F496E; 
+    --clr-error: #6F0119;
   }
 
   body {
