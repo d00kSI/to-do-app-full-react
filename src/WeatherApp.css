@@ -1,0 +1,114 @@
+body {
+    background-color: var(--clr-dark);  
+}
+
+.card {
+    width:90%;
+    max-width: 470px;
+    background: linear-gradient(125deg, var(--clr-light-blue), var(--clr-dark-blue));
+    color: var(--clr-white);
+    margin: 100px auto 0;
+    border-radius: 1.5rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form input {
+    border: 0;
+    outline: 0;
+    background: var(--clr-white);
+    color: var(--clr-dark);
+    padding: 0.8rem 1.5rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    flex: 1;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    box-shadow: 0 0 1.2rem -0.6rem;                               
+}
+
+.form button {
+    border: 0;
+    outline: 0;
+    background: var(--clr-white);
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 1.2rem -0.6rem;  
+}
+
+.i {
+    width: 3rem;
+}
+
+.error {
+    text-align: left;
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: var(--clr-error);
+    font-weight: 500;
+}
+
+.weather-icon {
+    width: 200px;
+    margin-top: 1.5rem;
+}
+
+.weather h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    text-shadow: 0 0 1.2rem -0.6rem; 
+}
+
+.weather h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: -10px;
+    text-shadow: 0 0 1.2rem -0.6rem; 
+}
+
+.weather h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 0.25rem;
+    text-shadow: 0 0 1.2rem -0.6rem; 
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.8rem;
+    margin-top: 50px;
+    text-shadow: 0 0 1.2rem -0.6rem; 
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col .symbol-left {
+    width: 2rem;
+    margin-right: 0.3rem;
+}
+
+.col .symbol-right {
+    width: 2rem;
+    margin-right: 0.8rem;
+}
+
+.humidity, .wind {
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+}

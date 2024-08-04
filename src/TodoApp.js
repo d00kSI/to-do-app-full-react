@@ -4,6 +4,8 @@ import TodoList from './TodoList';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
+import './TodoApp.css';
+
 const TodoApp = () => {
     console.log('TodoApp component mounted');
 
