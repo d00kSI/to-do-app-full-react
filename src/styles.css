@@ -32,6 +32,6 @@ body{
   min-height: 100vh;
 }
 
-.menu-icon {
-  font-size: 1rem;
+span.menu-icon {
+  font-size: 1.3rem;
 }
