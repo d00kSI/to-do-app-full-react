@@ -1,14 +1,15 @@
 import React from 'react';
+import ListItem from './ListItem';
 import './SideNav.css';
 
 function SideNav({ isOpen, onDisplayApp, closeNav }) {
   return (
     <div id="mySidenav" className="sidenav" style={{ width: isOpen ? '350px' : '0' }}>
-      <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
+      <a href="#" className="closebtn" onClick={(e) => { e.preventDefault(); closeNav(); }}>&times;</a>
       <ul id="app-list" className="app-list">
-        <li><a href="#" onClick={() => onDisplayApp('todo-list')}>To Do List</a></li>
-        <li><a href="#" onClick={() => onDisplayApp('weather-app')}>Weather App</a></li>
-        <li><a href="#" onClick={() => onDisplayApp('joke-app')}>Random Joke Fetcher</a></li>
+        <ListItem appName="To Do List" appId="todo-list" onDisplayApp={onDisplayApp} />
+        <ListItem appName="Weather App" appId="weather-app" onDisplayApp={onDisplayApp} />
+        <ListItem appName="Random Joke Fetcher" appId="joke-app" onDisplayApp={onDisplayApp} />
       </ul>
     </div>
   );

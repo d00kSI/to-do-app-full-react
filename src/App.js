@@ -55,7 +55,7 @@ function App() {
       </span>
 
       <header>
-        <h1 class="app-title">{appTitle}</h1>
+        <h1 className="app-title">{appTitle}</h1>
       </header>
 
       <SideNav

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Input from './Input';
+import Button from './Button';
+import Form from './Form';
 import { faSquarePlus } from '@fortawesome/free-solid-svg-icons';
 
 // Define the TodoForm component which receives addTodo as a prop
@@ -18,18 +20,21 @@ const TodoForm = ({ addTodo }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>                                                      {/* Attach the handleSubmit function to the form's onSubmit event */}
-            <input 
-                type="text" 
-                className="todo-input" 
-                placeholder="Task description" 
+        <Form onSubmit={handleSubmit}>                                                      {/* Attach the handleSubmit function to the form's onSubmit event */}
+            <Input 
+                type="text"
+                placeholder="Task description"  
                 value={input}
                 onChange={(e) => setInput(e.target.value)}                                  // Update state on input change
+                className="todo-input"
+                required
             />
-            <button className="todo-button" type="submit">                                  {/* Button to submit the form */}
-                <FontAwesomeIcon icon={faSquarePlus} />
-            </button>
-        </form>
+            <Button                                                                         // Submit button to submit the form
+                icon={faSquarePlus}
+                className="todo-button"
+                type="submit"
+            />
+        </Form>
     );
 };
 

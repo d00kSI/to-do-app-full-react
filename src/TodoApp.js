@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TodoForm from './TodoForm';
 import TodoList from './TodoList';
+import Button from './Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
@@ -72,9 +73,13 @@ const TodoApp = () => {
                     </select>
                 </div>    
                 
-                <button onClick={() => setTodos([])} className="empty-button">Delete All            {/* Button to delete all todos with a trash icon */}
-                    <FontAwesomeIcon icon={faTrash} />
-                </button>
+                <Button                                                                             // Button to delete all todos with a trash icon 
+                    onClick={() => setTodos([])} 
+                    icon={faTrash}
+                    className="empty-button"
+                    text="Delete All"
+                    type="button"
+                />
             </div>
 
             <TodoList 
